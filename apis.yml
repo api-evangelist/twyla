@@ -1,7 +1,23 @@
 aid: twyla
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/twyla.png
 name: Twyla
-description: 'Twyla is a company surfaced as a portfolio company of gv and added to the API Evangelist
-  network as a stub for enrichment. Sector: consumer. This profile is a lead awaiting the enrichment pipeline.'
+description: 'Twyla is an online marketplace for limited-edition art prints from contemporary
+  artists, backed by GV (Google Ventures). As of July 2026 the twyla.com site is a landing
+  page under redevelopment ("pardon our dust as we work on creating an even better online
+  art marketplace and community") pointing visitors to its social channels, and the company
+  publishes no developer portal, documentation, or public API surface — api.twyla.com and
+  docs.twyla.com do not resolve.'
 url: https://raw.githubusercontent.com/api-evangelist/twyla/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,10 +27,14 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
 - Consumer
+- Art
+- Marketplace
+- Art Prints
+- E-Commerce
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,4 +43,15 @@ maintainers:
   email: info@apis.io
 common:
 - type: Website
-  url: http://twyla.com
+  url: https://www.twyla.com
+- type: GitHubOrganization
+  url: https://github.com/twylainc
+- type: DomainSecurity
+  url: security/twyla-domain-security.yml
+- type: LLMsTxt
+  url: llms/twyla-llms.txt
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 3
+  pass: local-v1

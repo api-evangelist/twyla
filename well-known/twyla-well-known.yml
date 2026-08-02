@@ -1,0 +1,24 @@
+generated: '2026-07-21'
+method: probed
+source: live HTTP probes of https://www.twyla.com (browser user-agent)
+host: https://www.twyla.com
+note: Root of www.twyla.com returns 200 (landing page), but every non-root path
+  probed — including the full /.well-known/ discovery surface — returns 403
+  Forbidden. No well-known documents were retrievable; no pointer is wired in
+  apis.yml because no discovery surface exists. api.twyla.com and docs.twyla.com
+  do not resolve in DNS (NXDOMAIN).
+documents:
+- path: /.well-known/security.txt
+  status: 403
+- path: /.well-known/openid-configuration
+  status: 403
+- path: /.well-known/oauth-authorization-server
+  status: 403
+- path: /.well-known/api-catalog
+  status: 403
+- path: /.well-known/ai-plugin.json
+  status: 403
+- path: /llms.txt
+  status: 403
+- path: /robots.txt
+  status: 403
